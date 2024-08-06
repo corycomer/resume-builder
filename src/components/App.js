@@ -5,7 +5,18 @@ import Filter from './Filter';
 import '../App.css';
 
 function App() {
-    const [sections, setSections] = useState([]);
+    const [sections, setSections] = useState([
+        {
+            label: 'Summary',
+            fields: [''],
+            tags: []
+        },
+        {
+            label: 'Work History',
+            fields: [''],
+            tags: []
+        }
+    ]);
     const [filter, setFilter] = useState('');
 
     const addSection = (label) => {
