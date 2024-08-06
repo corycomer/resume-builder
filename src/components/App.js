@@ -33,6 +33,8 @@ function App() {
         ? sections.filter(section => section.tags.includes(filter))
         : sections;
 
+    console.log("Sections state:", sections);
+
     return (
         <div className="app">
             <h1>Resume Builder</h1>
@@ -50,4 +52,3 @@ function App() {
 }
 
 export default App;
-
